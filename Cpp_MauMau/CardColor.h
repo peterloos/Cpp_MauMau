@@ -1,0 +1,1 @@
+enum class CardColor { Empty, Karo, Herz, Pik, Kreuz };
