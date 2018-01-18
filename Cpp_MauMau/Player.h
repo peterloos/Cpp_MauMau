@@ -18,19 +18,20 @@ public:
     int GetNumberCards();
     void IsPlaying(bool isPlaying);
     bool IsPlaying();
+    void SetName(const char* name);
+    void GetName(char name[], int len);
 
     // methods
     CardColor ChooseAColor();
-    void DrawCards(int number);
-    bool CounterSeven(int numCardsToDraw);
+    void DrawCards(int number);   
     bool PlayCard(CardColor requestedColor, CardPicture requestedPicture);
     bool PlayCard(CardColor requestedColor);
     void PlayArbitraryCard();
+    bool CounterSeven(int numCardsToDraw);
     void ReleaseAllCards();
 
     // private helper methods
-    void SetName(const char* name);
-    void GetName(char name[], int len);
+private:
     Card DrawCard();
     bool HasSeven();
     void PlaySeven();

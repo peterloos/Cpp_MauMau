@@ -8,16 +8,16 @@ public:
     // c'tor
     CardSet();
 
-    // public interface - properties
+    // properties
     int Size() const;
 
-    // public interface - methods
+    // methods
     void Add(Card c);
-    void Remove(int num);
+    void Remove(int index);
     void Clear();
 
     // operators
-    Card operator[](int) const;
+    Card operator[](int index) const;
 
     // output
     friend ostream& operator<< (ostream&, const CardSet&);

@@ -22,21 +22,12 @@ Card::Card()
 {
     m_color = CardColor::Empty;
     m_picture = CardPicture::Empty;
-    m_empty = true;
-}
-
-Card::Card(const Card& card)
-{
-    m_color = card.m_color;
-    m_picture = card.m_picture;
-    m_empty = card.m_empty;
 }
 
 Card::Card(CardColor color, CardPicture picture)
 {
     m_color = color;
     m_picture = picture;
-    m_empty = false;
 }
 
 // operators

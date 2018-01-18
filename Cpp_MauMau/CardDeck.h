@@ -12,20 +12,19 @@ public:
     // c'tor
     CardDeck();
 
-    // public interface - properties
+    // properties
     void SetRandomSeed();
     void SetRandomSeed(int seed);
     bool IsEmpty() const;
     int Size() const;
 
-    // public interface - methods
-    void Fill();
-    void Clear();
-    void Shuffle();
-
+    // methods
     void Push(Card);
     Card Pop();
     Card TopOfDeck();
+    void Fill();
+    void Clear();
+    void Shuffle();
 
     // output
     friend ostream& operator<< (ostream&, const CardDeck&);

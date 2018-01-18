@@ -3,7 +3,6 @@ class Card
 private:
     CardColor    m_color;
     CardPicture  m_picture;
-    bool         m_empty;
 
 public:
     static const char* CardColorDisplay[];
@@ -12,7 +11,6 @@ public:
 public:
     // c'tors
     Card();
-    Card(const Card&);
     Card(CardColor, CardPicture);
 
     // getter

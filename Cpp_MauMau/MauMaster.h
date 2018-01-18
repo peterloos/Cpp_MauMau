@@ -26,6 +26,7 @@ public:
     void Play();
 
 private:
+    // private helper methods
     int NextPlayer(int currentPlayer);
     int IncrementNumberOfCardsToDraw(int numberOfCardsToDraw);
     void LogGameStatusDebug(Card topMostCard, int currentPlayer);

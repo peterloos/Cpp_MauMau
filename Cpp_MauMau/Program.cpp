@@ -79,7 +79,7 @@ void TestUnit_10_PlayTheGame()
     MauMaster::PrintVersion();
     const char* names[] = { "Hans", "Sepp", "Ulli" };
     MauMaster mm (names, 3);
-    mm.Init(1);
+    mm.Init(111);
     mm.Play();
 }
 
@@ -130,12 +130,12 @@ void TestUnit_12_StressTestMauMaster()
 
 int main()
 {
-    // TestUnit_01_Cards();
-    // TestUnit_02_CardDeck();
-    // TestUnit_03_CardDeck();
-    // TestUnit_04_CardSet();
+    TestUnit_01_Cards();
+    TestUnit_02_CardDeck();
+    TestUnit_03_CardDeck();
+    TestUnit_04_CardSet();
     TestUnit_10_PlayTheGame();
-    // TestUnit_11_SingleTestMauMaster();
+    TestUnit_11_SingleTestMauMaster();
     // TestUnit_12_StressTestMauMaster();
 
     return 0;
